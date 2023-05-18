@@ -2,7 +2,7 @@
 
 const TopPick = () => {
     return (
-        <div>
+        <div className="mb-24">
             <div className="mb-10">
                 <h1 className="text-center font-bold text-5xl">This Week Top Pick</h1>
             </div>
