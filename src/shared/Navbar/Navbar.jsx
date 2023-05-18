@@ -16,7 +16,7 @@ const Navbar = () => {
                     <span className="text-2xl mx-3"><Link to={'/'}>All-Toys</Link></span>
                 </div>
                 <div>
-                    <span className="text-2xl"><Link to={'/'}>Blog</Link></span> </div>
+                    <span className="text-2xl"><Link to={'/blog'}>Blog</Link></span> </div>
             </div>
             <div className="flex-none gap-2">
                 <div>
