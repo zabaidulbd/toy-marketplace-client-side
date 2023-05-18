@@ -26,6 +26,7 @@ const Login = () => {
         signIn(email, password)
             .then(result => {
                 const loggedUser = result.user;
+                console.log(loggedUser)
                 navigate(from, { replace: true });
                 setLogInError('');
                 form.reset();
@@ -39,8 +40,8 @@ const Login = () => {
     const handleGoogleLogIn = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
-                const loggedInUser = result.user;
-                console.log(loggedInUser)
+                const googleLoggedInUser = result.user;
+                console.log(googleLoggedInUser)
                 navigate(from, { replace: true });
             })
             .catch(error => {
