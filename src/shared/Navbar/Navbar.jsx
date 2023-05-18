@@ -21,7 +21,9 @@ const Navbar = () => {
                 </div>
                 <div><h1 className="text-5xl">Lego-Store</h1></div>
                 <div>
-                    <span className="text-2xl ms-5"><Link to={'/'}>Home</Link></span>
+                    <span className="text-2xl ms-5">
+                        <Link to={'/'}>Home</Link>
+                    </span>
                 </div>
                 <div>
                     <span className="text-2xl mx-3"><Link to={'/'}>All-Toys</Link></span>
@@ -30,9 +32,10 @@ const Navbar = () => {
                     <span className="text-2xl"><Link to={'/blog'}>Blog</Link></span> </div>
             </div>
 
-
             <div className="flex-none gap-2">
-                <span className="text-2xl mx-3"><Link to={'/'}>Add a Toy</Link></span>
+                <span className="text-2xl mx-3">
+                    <Link to={'/'}>Add a Toy</Link>
+                </span>
                 <span className="text-2xl"><Link to={'/'}>My Toys</Link></span>
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                     <div className="w-10 rounded-full">
