@@ -9,8 +9,8 @@ const Gallery = () => {
                 <div className="absolute bottom-72 left-96">
                     <h2 className='text-5xl text-black'>Lego Cars</h2>
                     <p className='text-black py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                    <button className="btn btn-outline btn-info mr-3">Discover More</button>
-                    <button className="btn btn-outline btn-info">Latest Products</button>
+                    <button className="btn btn-outline btn-secondary mr-3">Discover More</button>
+                    <button className="btn btn-outline btn-secondary">Latest Products</button>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
                     <a href="#slide4" className="btn btn-circle mr-3">❮</a>
@@ -22,8 +22,8 @@ const Gallery = () => {
                 <div className="absolute bottom-72 left-96">
                     <h2 className='text-5xl text-black'>Lego Architecture</h2>
                     <p className='text-black py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                    <button className="btn btn-outline btn-info mr-3">Discover More</button>
-                    <button className="btn btn-outline btn-info">Latest Products</button>
+                    <button className="btn btn-outline btn-secondary mr-3">Discover More</button>
+                    <button className="btn btn-outline btn-secondary">Latest Products</button>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
                     <a href="#slide1" className="btn btn-circle mr-3">❮</a>
@@ -35,8 +35,8 @@ const Gallery = () => {
                 <div className="absolute bottom-72 left-96">
                     <h2 className='text-5xl text-black'>Lego City</h2>
                     <p className='text-black py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                    <button className="btn btn-outline btn-info mr-3">Discover More</button>
-                    <button className="btn btn-outline btn-info">Latest Products</button>
+                    <button className="btn btn-outline btn-secondary mr-3">Discover More</button>
+                    <button className="btn btn-outline btn-secondary">Latest Products</button>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
                     <a href="#slide2" className="btn btn-circle mr-3">❮</a>
@@ -48,8 +48,8 @@ const Gallery = () => {
                 <div className="absolute bottom-72 left-96">
                     <h2 className='text-5xl text-black'>Lego Star Wars</h2>
                     <p className='text-black py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                    <button className="btn btn-outline btn-info mr-3">Discover More</button>
-                    <button className="btn btn-outline btn-info">Latest Products</button>
+                    <button className="btn btn-outline btn-secondary mr-3">Discover More</button>
+                    <button className="btn btn-outline btn-secondary">Latest Products</button>
                 </div>
                 <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
                     <a href="#slide3" className="btn btn-circle mr-3">❮</a>
