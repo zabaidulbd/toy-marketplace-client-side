@@ -5,7 +5,7 @@ const Gallery = () => {
 
         <div className="carousel w-full rounded-lg">
             <div id="slide1" className="carousel-item relative w-full">
-                <img src="https://img.freepik.com/free-photo/kid-playing-with-toy-train_23-2148131040.jpg?w=996&t=st=1684400006~exp=1684400606~hmac=8b6c371de8058fb18f5c2893be6fab6675361d5798022990cd876965de62d537" className="w-full" />
+                <img src="https://img.freepik.com/free-photo/children-playing-with-lego-playing-room_1157-26663.jpg?w=996&t=st=1684404182~exp=1684404782~hmac=372e9214e9499b9208ef5ba978ff8c946abe5bd3c697a530977fa7393cee9c3b" className="w-full" />
                 <div className="absolute bottom-72 left-96">
                     <h2 className='text-5xl text-black'>Lego Cars</h2>
                     <p className='text-black py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
