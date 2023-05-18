@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <>
 
-            <footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+            <footer className="footer px-10 py-4 border-t bg-base-300 text-base-content border-base-300">
                 <div className="items-center grid-flow-col">
                     <img className="w-36 rounded-full" src="https://img.freepik.com/free-vector/construction-background-design_1343-2.jpg?w=740&t=st=1684385038~exp=1684385638~hmac=1a9d333d2e08e353a4a512bab8f7a56a81a751eb664067e63751fbd53df949af" alt="" />
                     <p className="ms-3"><span className="font-bold text-xl">Lego-Store</span><br /><span>Kamal Ataturk Road, Dhaka-1212</span></p>
