@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-300 mt-10">
             <div className="flex-1">
                 <div>
-                    <img className="w-36 ms-16 me-5 " src="https://img.freepik.com/free-vector/construction-background-design_1343-2.jpg?w=740&t=st=1684385038~exp=1684385638~hmac=1a9d333d2e08e353a4a512bab8f7a56a81a751eb664067e63751fbd53df949af" alt="" />
+                    <img className="w-36 rounded-full me-5" src="https://img.freepik.com/free-vector/construction-background-design_1343-2.jpg?w=740&t=st=1684385038~exp=1684385638~hmac=1a9d333d2e08e353a4a512bab8f7a56a81a751eb664067e63751fbd53df949af" alt="" />
                 </div>
                 <div><h1 className="text-5xl">Lego-Store</h1></div>
                 <div>
@@ -32,7 +32,7 @@ const Navbar = () => {
                     </div>
                 </label>
                 <div>
-                    <Link to={'/login'}><button className="btn btn-active btn-accent">Login</button></Link>
+                    <Link to={'/login'}><button className="btn btn-active btn-ghost">Login</button></Link>
                 </div>
             </div>
         </div>
