@@ -26,7 +26,6 @@ const AuthProvider = ({ children }) => {
 
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, loggedUser => {
-            console.log('logged use insite auth state obaserver', loggedUser)
             setUser(loggedUser);
             setLoading(false)
         })

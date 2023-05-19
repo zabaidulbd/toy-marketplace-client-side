@@ -14,7 +14,7 @@ const Navbar = () => {
 
 
     return (
-        <div className="navbar bg-base-300 mt-10">
+        <div className="navbar bg-base-300">
             <div className="flex-1">
                 <div>
                     <img className="w-36 rounded-full me-5" src="https://img.freepik.com/free-vector/construction-background-design_1343-2.jpg?w=740&t=st=1684385038~exp=1684385638~hmac=1a9d333d2e08e353a4a512bab8f7a56a81a751eb664067e63751fbd53df949af" alt="" />
@@ -34,7 +34,7 @@ const Navbar = () => {
 
             <div className="flex-none gap-2">
                 <span className="text-2xl mx-3">
-                    <Link to={'/'}>Add a Toy</Link>
+                    <Link to={'/addToy'}>Add a Toy</Link>
                 </span>
                 <span className="text-2xl"><Link to={'/'}>My Toys</Link></span>
                 <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
