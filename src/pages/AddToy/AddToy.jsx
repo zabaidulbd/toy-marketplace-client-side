@@ -8,10 +8,40 @@ const AddToy = () => {
 
     const { user } = useContext(AuthContext);
 
+    const handleAddToy = event => {
+        event.preventDefault();
+
+        const form = event.target;
+        const picture = form.picture.value;
+        const name = form.name.value;
+        const sellerName = user?.displayName;
+        const email = user?.email;
+        const subCategory = form.subCategory.value;
+        const price = form.price.value;
+        const rating = form.rating.value;
+        const quantity = form.quantity.value;
+        const detail = form.detail.value;
+        const toyDetails = {
+
+            picture,
+            name,
+            sellerName,
+            email,
+            subCategory,
+            price,
+            rating,
+            quantity,
+            detail
+
+        }
+        console.log(toyDetails);
+
+    }
+
     return (
         <>
             <Navbar></Navbar>
-            <form>
+            <form onSubmit={handleAddToy} className="p-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="form-control">
                         <label className="label">
@@ -77,7 +107,7 @@ const AddToy = () => {
                     </div>
                 </div>
 
-                <div className="form-control my-6">
+                <div className="form-control mt-6">
                     <input className="btn btn-primary btn-block" type="submit" value="Add Toy" />
                 </div>
             </form>
