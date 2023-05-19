@@ -8,7 +8,7 @@ const Navbar = () => {
     const { user, logOut } = useContext(AuthContext);
     const handleSignOut = () => {
         logOut()
-            .then()
+            .then(() => { })
             .catch(error => console.log(error))
     }
 
@@ -36,16 +36,20 @@ const Navbar = () => {
                 <span className="text-2xl mx-3">
                     <Link to={'/addToy'}>Add a Toy</Link>
                 </span>
-                <span className="text-2xl"><Link to={'/'}>My Toys</Link></span>
-                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                    <div className="w-10 rounded-full">
-                        <img src="https://img.freepik.com/free-photo/young-man-wearing-blue-outfit-holding-red-folder_1298-179.jpg?w=740&t=st=1683177286~exp=1683177886~hmac=c440209e285a379ced974449f84436bdcc297217e39170b08f534dfe769c131d" />
-                    </div>
-                </label>
+
 
                 {
-                    user ?
-                        <button className="btn btn-active btn-ghost" onClick={handleSignOut}>Log-Out</button> :
+                    user?.email ?
+                        <>
+                            <span className="text-2xl"><Link to={'/toys'}>My Toys</Link></span>
+                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <div className="w-10 rounded-full">
+                                    <img src="https://img.freepik.com/free-photo/young-man-wearing-blue-outfit-holding-red-folder_1298-179.jpg?w=740&t=st=1683177286~exp=1683177886~hmac=c440209e285a379ced974449f84436bdcc297217e39170b08f534dfe769c131d" />
+                                </div>
+                            </label>
+
+                            <button className="btn btn-active btn-ghost" onClick={handleSignOut}>Log-Out</button>
+                        </> :
                         <Link to={'/login'}><button className="btn btn-active btn-ghost">Login</button></Link>
                 }
 

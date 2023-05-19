@@ -47,7 +47,9 @@ const AddToy = () => {
             .then(data => {
                 console.log(data)
                 if (data.insertedId) {
-                    alert('Toy added successfully')
+                    alert('Toy added successfully');
+                    form.reset();
+
                 }
             })
 
