@@ -33,14 +33,12 @@ const Navbar = () => {
             </div>
 
             <div className="flex-none gap-2">
-                <span className="text-2xl mx-3">
-                    <Link to={'/addToy'}>Add a Toy</Link>
-                </span>
-
-
                 {
                     user?.email ?
                         <>
+                            <span className="text-2xl mx-3">
+                                <Link to={'/addToy'}>Add a Toy</Link>
+                            </span>
                             <span className="text-2xl"><Link to={'/toys'}>My Toys</Link></span>
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-10 rounded-full">

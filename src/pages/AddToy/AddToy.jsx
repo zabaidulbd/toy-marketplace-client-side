@@ -34,7 +34,6 @@ const AddToy = () => {
             detail
 
         }
-        console.log(toyDetails);
 
         fetch('http://localhost:5000/toys', {
             method: 'POST',
