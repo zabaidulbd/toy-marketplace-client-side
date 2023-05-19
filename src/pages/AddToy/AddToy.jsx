@@ -36,6 +36,21 @@ const AddToy = () => {
         }
         console.log(toyDetails);
 
+        fetch('http://localhost:5000/toys', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(toyDetails)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.insertedId) {
+                    alert('Toy added successfully')
+                }
+            })
+
     }
 
     return (
@@ -74,8 +89,11 @@ const AddToy = () => {
                         <label className="label">
                             <span className="label-text">Sub-Category</span>
                         </label>
-                        <input type="text" name="subCategory" className="input input-bordered" />
-
+                        <select className="input input-bordered" name="subCategory">
+                            <option value="lego-cars">Lego Cars</option>
+                            <option value="lego-city">Lego City</option>
+                            <option value="lego-star-wars">Lego Star Wars</option>
+                        </select>
                     </div>
                     <div className="form-control">
                         <label className="label">
