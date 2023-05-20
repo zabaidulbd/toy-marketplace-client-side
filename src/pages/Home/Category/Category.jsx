@@ -1,30 +1,74 @@
-
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { useEffect, useState } from 'react';
 import 'react-tabs/style/react-tabs.css';
+import CategoryLegoCity from './CategoryLegoCity';
+import CategoryLegoCars from './CategoryLegoCars';
+import CategoryLegoCarWar from './CategoryLegoCarWar';
 
 const Category = () => {
-    return (
-        <div className='text-center my-32'>
-            <Tabs>
-                <TabList className='bg-orange-600 font-bold text-3xl'>
-                    <Tab>Lego Cars</Tab>
-                    <Tab>Lego City</Tab>
-                    <Tab>Lego Star Wars</Tab>
-                </TabList>
 
+    const [legoCity, setLegoCity] = useState([]);
+    const [legoCars, setLegoCars] = useState([]);
+    const [legoCarWar, setLegoCarWar] = useState([]);
+
+    useEffect(() => {
+
+        fetch(`http://localhost:5000/toy/lego-city`)
+            .then(res => res.json())
+            .then(data => {
+                setLegoCity(data)
+            })
+
+    }, []);
+
+    useEffect(() => {
+
+        fetch(`http://localhost:5000/toy/lego-cars`)
+            .then(res => res.json())
+            .then(data => {
+                setLegoCars(data)
+            })
+    }, []);
+
+
+    useEffect(() => {
+
+        fetch(`http://localhost:5000/toy/lego-star-wars`)
+            .then(res => res.json())
+            .then(data => {
+                setLegoCarWar(data)
+            })
+    }, []);
+
+
+
+
+    return (
+        <div className='mt-20 mb-16'>
+
+            <Tabs>
+                <TabList className="text-center bg-red-400 font-bold test-5xl px-5">
+                    <Tab>Lego-City</Tab>
+                    <Tab>Lego-Cars</Tab>
+                    <Tab>lego-star-wars</Tab>
+                </TabList>
                 <TabPanel>
-                    <h2>Any content x</h2>
-                    <h2>Any Content y</h2>
+                    {
+                        legoCity.map(city => <CategoryLegoCity key={city._id} city={city}></CategoryLegoCity>)
+                    }
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content 1</h2>
-                    <h2>Any Content 2</h2>
+                    {
+                        legoCars.map(car => <CategoryLegoCars key={car._id} car={car}></CategoryLegoCars>)
+                    }
                 </TabPanel>
                 <TabPanel>
-                    <h2>Any content j</h2>
-                    <h2>Any Content u</h2>
+                    {
+                        legoCarWar.map(lego => <CategoryLegoCarWar key={lego._id} lego={lego}></CategoryLegoCarWar>)
+                    }
                 </TabPanel>
             </Tabs>
+
 
         </div>
     );
