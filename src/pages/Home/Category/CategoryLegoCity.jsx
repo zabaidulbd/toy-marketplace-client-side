@@ -24,7 +24,7 @@ const CategoryLegoCity = ({ city }) => {
                             <p><strong>Rating</strong> : {rating}</p>
                         </div>
                         <div className="card-actions">
-                            <button onClick={handleLegoCity} className="btn btn-primary">Details</button>
+                            <button onClick={handleLegoCity} className="btn btn-outline btn-warning">Details</button>
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const CategoryLegoCity = ({ city }) => {
                                 <p><strong>Rating</strong> : {rating}</p>
                             </div>
                             <div className="card-actions">
-                                <button onClick={handleLegoCity} className="btn btn-primary">Details</button>
+                                <button onClick={handleLegoCity} className="btn btn-outline btn-warning">Details</button>
                             </div>
                         </div>
                     </div>

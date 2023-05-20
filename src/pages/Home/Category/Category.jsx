@@ -47,7 +47,7 @@ const Category = () => {
         <div className='mt-20 mb-16'>
 
             <Tabs>
-                <TabList className="text-center bg-red-400 font-bold test-5xl px-5">
+                <TabList className="text-center bg-orange-400 font-bold test-5xl px-5 pt-8">
                     <Tab>Lego-City</Tab>
                     <Tab>Lego-Cars</Tab>
                     <Tab>lego-star-wars</Tab>

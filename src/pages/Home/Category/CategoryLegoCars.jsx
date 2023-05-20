@@ -22,7 +22,7 @@ const CategoryLegoCars = ({ car }) => {
                             <p><strong>Rating</strong> : {rating}</p>
                         </div>
                         <div className="card-actions">
-                            <button onClick={handleLegoCar} className="btn btn-primary">Details</button>
+                            <button onClick={handleLegoCar} className="btn btn-outline btn-warning">Details</button>
                         </div>
                     </div>
                 </div>
@@ -40,7 +40,7 @@ const CategoryLegoCars = ({ car }) => {
                                 <p><strong>Rating</strong> : {rating}</p>
                             </div>
                             <div className="card-actions">
-                                <button onClick={handleLegoCar} className="btn btn-primary">Details</button>
+                                <button onClick={handleLegoCar} className="btn btn-outline btn-warning">Details</button>
                             </div>
                         </div>
                     </div>

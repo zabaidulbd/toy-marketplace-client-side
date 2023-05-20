@@ -4,9 +4,12 @@ import Navbar from '../../shared/Navbar/Navbar';
 import Footer from '../../shared/Footer/Footer';
 import AllToysRow from './AllToysRow';
 
+
 const AllToys = () => {
 
     const totalToys = useLoaderData();
+
+
 
     return (
         <div>

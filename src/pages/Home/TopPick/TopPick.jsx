@@ -4,15 +4,15 @@ const TopPick = () => {
     return (
         <div className="mb-24">
             <div className="mb-10">
-                <h1 className="text-center font-bold text-5xl">This Week Top Pick</h1>
+                <h1 className="text-center font-bold text-5xl text-orange-400">This Week Top Pick</h1>
             </div>
 
             <div className="carousel w-full rounded-lg">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img src="https://img.freepik.com/free-photo/little-boy-playing-with-wooden-car_23-2148518124.jpg?w=900&t=st=1684405832~exp=1684406432~hmac=4c776aeea1fc46c7cfc6b0bcc59d9b376ebbbf09a82c581783fa73657bae4449" className="w-full" />
                     <div className="absolute bottom-72 left-96">
-                        <h2 className='text-5xl text-black'>Lego for Kids</h2>
-                        <p className='text-black py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
+                        <h2 className='text-5xl text-red-400'>Lego for Kids</h2>
+                        <p className='text-red-400 py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
                         <button className="btn btn-outline btn-error mr-3">Discover More</button>
                         <button className="btn btn-outline btn-error">Latest Products</button>
                     </div>
