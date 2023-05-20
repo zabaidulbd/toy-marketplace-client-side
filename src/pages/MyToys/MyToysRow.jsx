@@ -1,8 +1,11 @@
 
 
-const MyToysRow = ({ toy }) => {
+const MyToysRow = ({ toy, handleDelete }) => {
 
-    const { picture, name, sellerName, email, subCategory, price, rating, detail, quantity } = toy;
+    const { _id, picture, name, sellerName, email, subCategory, price, rating, detail, quantity } = toy;
+
+
+
 
     return (
         <>
@@ -30,7 +33,7 @@ const MyToysRow = ({ toy }) => {
                 <td>{detail}</td>
                 <td>
                     <button className="btn btn-success me-2">Edit</button>
-                    <button className="btn btn-warning">Delete</button>
+                    <button onClick={() => handleDelete(_id)} className="btn btn-warning">Delete</button>
                 </td>
 
 
