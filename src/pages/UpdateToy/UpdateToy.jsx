@@ -64,7 +64,6 @@ const UpdateToy = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <h1>update toy : {name}</h1>
             <h1 className='font-bold text-5xl text-center'>Update Toy</h1>
             <form onSubmit={handleUpdateToy} className="p-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
