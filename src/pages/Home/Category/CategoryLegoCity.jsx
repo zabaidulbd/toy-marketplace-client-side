@@ -6,6 +6,10 @@ const CategoryLegoCity = ({ city }) => {
 
     const { picture, name, price, rating } = city;
 
+    const handleLegoCity = () => {
+        alert('You Have To Login First, Otherwise You Can not See Details')
+    }
+
     return (
         <div className='flex justify-evenly mb-5'>
             <div>
@@ -20,7 +24,7 @@ const CategoryLegoCity = ({ city }) => {
                             <p><strong>Rating</strong> : {rating}</p>
                         </div>
                         <div className="card-actions">
-                            <button className="btn btn-primary">Details</button>
+                            <button onClick={handleLegoCity} className="btn btn-primary">Details</button>
                         </div>
                     </div>
                 </div>
@@ -38,7 +42,7 @@ const CategoryLegoCity = ({ city }) => {
                                 <p><strong>Rating</strong> : {rating}</p>
                             </div>
                             <div className="card-actions">
-                                <button className="btn btn-primary">Details</button>
+                                <button onClick={handleLegoCity} className="btn btn-primary">Details</button>
                             </div>
                         </div>
                     </div>

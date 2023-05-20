@@ -4,6 +4,10 @@ const CategoryLegoCars = ({ car }) => {
 
     const { picture, name, price, rating } = car;
 
+    const handleLegoCar = () => {
+        alert('You Have To Login First, Otherwise You Can not See Details')
+    }
+
     return (
         <div className='flex justify-evenly mb-5'>
             <div>
@@ -18,7 +22,7 @@ const CategoryLegoCars = ({ car }) => {
                             <p><strong>Rating</strong> : {rating}</p>
                         </div>
                         <div className="card-actions">
-                            <button className="btn btn-primary">Details</button>
+                            <button onClick={handleLegoCar} className="btn btn-primary">Details</button>
                         </div>
                     </div>
                 </div>
@@ -36,7 +40,7 @@ const CategoryLegoCars = ({ car }) => {
                                 <p><strong>Rating</strong> : {rating}</p>
                             </div>
                             <div className="card-actions">
-                                <button className="btn btn-primary">Details</button>
+                                <button onClick={handleLegoCar} className="btn btn-primary">Details</button>
                             </div>
                         </div>
                     </div>
