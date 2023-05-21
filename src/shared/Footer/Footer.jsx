@@ -6,7 +6,7 @@ const Footer = () => {
 
             <footer className="footer px-10 py-4 border-t bg-slate-400 text-base-content border-base-300">
                 <div className="items-center grid-flow-col">
-                    <img className="w-36 rounded-full" src="https://img.freepik.com/free-vector/construction-background-design_1343-2.jpg?w=740&t=st=1684385038~exp=1684385638~hmac=1a9d333d2e08e353a4a512bab8f7a56a81a751eb664067e63751fbd53df949af" alt="" />
+                    <img className="w-36 rounded-full" src="https://img.freepik.com/free-vector/team-work-concept-with-flat-design_23-2147840465.jpg?w=740&t=st=1684627779~exp=1684628379~hmac=c5ad0881f2b8c3560c927fafe58cf621c4f9b75f85ffd29fb2015e1f0356ae17" alt="" />
                     <p className="ms-3"><span className="font-bold text-xl">Lego-Store</span><br /><span className="text-blue-50">Kamal Ataturk Road, Dhaka-1212</span></p>
 
                 </div>

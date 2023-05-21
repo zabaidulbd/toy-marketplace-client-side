@@ -42,9 +42,9 @@ const MyToys = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <h1 className="text-center font-bold text-5xl my-10">List of My Total Toys</h1>
-            <div className="overflow-x-auto w-full">
-                <table className="table w-full">
+            <h1 className="text-center font-bold text-5xl mt-20 mb-10 text-orange-400">List of My Total Toys</h1>
+            <div className="overflow-x-auto w-full mb-10">
+                <table className="table w-full text-orange-400 p-5">
                     {/* head */}
                     <thead>
                         <tr>
@@ -70,11 +70,6 @@ const MyToys = () => {
 
                 </table>
             </div>
-
-
-
-
-
 
             <Footer></Footer>
         </div>

@@ -3,7 +3,7 @@
 const PopularToys = () => {
     return (
         <div className="my-24">
-            <h1 className="text-center font-bold text-5xl mb-10 text-orange-400">Explore Popular Lego-Toys</h1>
+            <h1 className="text-center font-bold text-5xl mb-20 text-orange-400">Explore Popular Lego-Toys</h1>
             <div className="carousel w-full">
                 <div id="item1" className="carousel-item w-full">
                     <img src="https://img.freepik.com/free-photo/child-having-fun-during-playtime_23-2149382708.jpg?w=996&t=st=1684404160~exp=1684404760~hmac=80629a30ca3d87a0c2576c5f11a666874c5b973585f38c656823b848669f4660" className="w-full" />

@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="navbar bg-slate-400">
             <div className="flex-1">
                 <div>
-                    <img className="w-32 rounded-full mx-5" src="https://img.freepik.com/free-vector/construction-background-design_1343-2.jpg?w=740&t=st=1684385038~exp=1684385638~hmac=1a9d333d2e08e353a4a512bab8f7a56a81a751eb664067e63751fbd53df949af" alt="" />
+                    <img className="w-32 rounded-full mx-5" src="https://img.freepik.com/free-vector/team-work-concept-with-flat-design_23-2147840465.jpg?w=740&t=st=1684627779~exp=1684628379~hmac=c5ad0881f2b8c3560c927fafe58cf621c4f9b75f85ffd29fb2015e1f0356ae17" alt="" />
                 </div>
                 <div><h1 className="text-5xl font-bold text-blue-50">Lego-Store</h1></div>
                 <div>

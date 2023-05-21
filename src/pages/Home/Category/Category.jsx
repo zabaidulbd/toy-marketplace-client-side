@@ -45,9 +45,10 @@ const Category = () => {
 
     return (
         <div className='mt-20 mb-16'>
+            <h1 className='text-5xl text-center font-bold mb-10 text-orange-400'>Search By Category</h1>
 
             <Tabs>
-                <TabList className="text-center bg-orange-400 font-bold test-5xl px-5 pt-8">
+                <TabList className="text-center bg-orange-300 font-bold test-5xl px-5 pt-8">
                     <Tab>Lego-City</Tab>
                     <Tab>Lego-Cars</Tab>
                     <Tab>lego-star-wars</Tab>

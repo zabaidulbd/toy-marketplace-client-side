@@ -18,10 +18,10 @@ const CategoryLegoCity = ({ city }) => {
                         <img src={picture} alt="Image Unavailable" className="rounded-xl" />
                     </figure>
                     <div className="card-body items-center text-center">
-                        <h2 className="card-title">{name}</h2>
+                        <h2 className="card-title text-orange-400">{name}</h2>
                         <div className='flex justify-between'>
-                            <p className='me-3'><strong>Price</strong> : {price}</p>
-                            <p><strong>Rating</strong> : {rating}</p>
+                            <p className='me-3 text-orange-400'><strong>Price</strong> : {price}</p>
+                            <p className='text-orange-400'><strong>Rating</strong> : {rating}</p>
                         </div>
                         <div className="card-actions">
                             <button onClick={handleLegoCity} className="btn btn-outline btn-warning">Details</button>
@@ -36,10 +36,10 @@ const CategoryLegoCity = ({ city }) => {
                             <img src={picture} alt="Image Unavailable" className="rounded-xl" />
                         </figure>
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title">{name}</h2>
+                            <h2 className="card-title text-orange-400">{name}</h2>
                             <div className='flex justify-between'>
-                                <p className='me-3'><strong>Price</strong> : {price}</p>
-                                <p><strong>Rating</strong> : {rating}</p>
+                                <p className='me-3 text-orange-400'><strong>Price</strong> : {price}</p>
+                                <p className='text-orange-400'><strong>Rating</strong> : {rating}</p>
                             </div>
                             <div className="card-actions">
                                 <button onClick={handleLegoCity} className="btn btn-outline btn-warning">Details</button>
