@@ -12,7 +12,7 @@ const MyToys = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myToy/${user?.email}`)
+        fetch(`https://assignment-eleven-server-lovat.vercel.app/myToy/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
@@ -24,7 +24,7 @@ const MyToys = () => {
     const handleDelete = id => {
         const proceed = confirm('Are You Sure You Want To Delete This Toy');
         if (proceed) {
-            fetch(`http://localhost:5000/toys/${id}`, {
+            fetch(`https://assignment-eleven-server-lovat.vercel.app/toys/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

@@ -42,7 +42,7 @@ const UpdateToy = () => {
 
         }
 
-        fetch(`http://localhost:5000/toys/${_id}`, {
+        fetch(`https://assignment-eleven-server-lovat.vercel.app/toys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
