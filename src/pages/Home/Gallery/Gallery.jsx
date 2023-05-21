@@ -1,9 +1,19 @@
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Gallery = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
     return (
 
-        <div className="my-20">
+        <div data-aos="fade-up" className="my-20">
             <h1 className="text-center font-bold text-5xl text-orange-400 mb-10">Lego Toys Gallery</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ms-7">
                 <div className="card w-96 bg-base-100 shadow-xl">

@@ -2,6 +2,9 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import ActiveLink from "../../ActiveLink/ActiveLink";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Navbar = () => {
@@ -13,9 +16,16 @@ const Navbar = () => {
             .catch(error => console.log(error))
     }
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
 
     return (
-        <div className="navbar bg-slate-400">
+        <div data-aos="fade-up" className="navbar bg-slate-400">
             <div className="flex-1">
                 <div>
                     <img className="w-32 rounded-full mx-5" src="https://img.freepik.com/free-vector/team-work-concept-with-flat-design_23-2147840465.jpg?w=740&t=st=1684627779~exp=1684628379~hmac=c5ad0881f2b8c3560c927fafe58cf621c4f9b75f85ffd29fb2015e1f0356ae17" alt="" />

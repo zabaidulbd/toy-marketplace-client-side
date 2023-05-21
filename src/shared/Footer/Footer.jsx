@@ -1,10 +1,20 @@
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Footer = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
+
     return (
         <>
 
-            <footer className="footer px-10 py-4 border-t bg-slate-400 text-base-content border-base-300">
+            <footer data-aos="fade-up" className="footer px-10 py-4 border-t bg-slate-400 text-base-content border-base-300">
                 <div className="items-center grid-flow-col">
                     <img className="w-36 rounded-full" src="https://img.freepik.com/free-vector/team-work-concept-with-flat-design_23-2147840465.jpg?w=740&t=st=1684627779~exp=1684628379~hmac=c5ad0881f2b8c3560c927fafe58cf621c4f9b75f85ffd29fb2015e1f0356ae17" alt="" />
                     <p className="ms-3"><span className="font-bold text-xl">Lego-Store</span><br /><span className="text-blue-50">Kamal Ataturk Road, Dhaka-1212</span></p>

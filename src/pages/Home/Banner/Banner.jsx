@@ -1,8 +1,20 @@
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Banner = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
+
     return (
-        <div className="mt-10 mb-9">
+
+        <div data-aos="fade-up" className="mt-10 mb-9">
             <div className="hero min-h-screen" style={{ backgroundImage: `url("https://img.freepik.com/free-photo/kid-playing-with-toy-train_23-2148131033.jpg?w=996&t=st=1684397966~exp=1684398566~hmac=b12305f49ed22f5e35d565c88ca0c37e711a1ebdd0831a989678a3a91437849d")` }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-center text-neutral-content">
@@ -15,7 +27,6 @@ const Banner = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 

@@ -1,8 +1,18 @@
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const TopPick = () => {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
+
     return (
-        <div className="mb-24">
+        <div data-aos="fade-up" className="mb-24">
             <div className="mb-20">
                 <h1 className="text-center font-bold text-5xl text-orange-400">This Week Top Pick</h1>
             </div>

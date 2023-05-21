@@ -4,6 +4,8 @@ import 'react-tabs/style/react-tabs.css';
 import CategoryLegoCity from './CategoryLegoCity';
 import CategoryLegoCars from './CategoryLegoCars';
 import CategoryLegoCarWar from './CategoryLegoCarWar';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Category = () => {
 
@@ -40,11 +42,19 @@ const Category = () => {
             })
     }, []);
 
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
+
 
 
 
     return (
-        <div className='mt-20 mb-16'>
+        <div data-aos="fade-up" className='mt-20 mb-16'>
             <h1 className='text-5xl text-center font-bold mb-10 text-orange-400'>Search By Category</h1>
 
             <Tabs>

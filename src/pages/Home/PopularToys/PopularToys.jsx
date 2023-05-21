@@ -1,8 +1,18 @@
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const PopularToys = () => {
+
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
     return (
-        <div className="my-24">
+        <div data-aos="fade-up" className="my-24">
             <h1 className="text-center font-bold text-5xl mb-20 text-orange-400">Explore Popular Lego-Toys</h1>
             <div className="carousel w-full">
                 <div id="item1" className="carousel-item w-full">
