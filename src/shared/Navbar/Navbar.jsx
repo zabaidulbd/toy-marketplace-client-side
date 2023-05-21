@@ -54,7 +54,7 @@ const Navbar = () => {
                             <span className="text-xl font-bold text-blue-50 mx-4"><ActiveLink to={'/toys'}>My Toys</ActiveLink></span>
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                                 <div className="w-12 rounded-full mx-2">
-                                    <img src="https://img.freepik.com/free-photo/young-man-wearing-blue-outfit-holding-red-folder_1298-179.jpg?w=740&t=st=1683177286~exp=1683177886~hmac=c440209e285a379ced974449f84436bdcc297217e39170b08f534dfe769c131d" />
+                                    <img src="https://img.freepik.com/free-photo/young-man-wearing-blue-outfit-holding-red-folder_1298-179.jpg?w=740&t=st=1683177286~exp=1683177886~hmac=c440209e285a379ced974449f84436bdcc297217e39170b08f534dfe769c131d" title="Zabaidul Islam" />
                                 </div>
                             </label>
 
