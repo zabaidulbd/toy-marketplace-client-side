@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import ActiveLink from "../../ActiveLink/ActiveLink";
 
 
 const Navbar = () => {
@@ -19,29 +20,30 @@ const Navbar = () => {
                 <div>
                     <img className="w-32 rounded-full mx-5" src="https://img.freepik.com/free-vector/team-work-concept-with-flat-design_23-2147840465.jpg?w=740&t=st=1684627779~exp=1684628379~hmac=c5ad0881f2b8c3560c927fafe58cf621c4f9b75f85ffd29fb2015e1f0356ae17" alt="" />
                 </div>
-                <div><h1 className="text-5xl font-bold text-blue-50">Lego-Store</h1></div>
+                <div><h1 className="text-5xl font-bold text-blue-50 mr-5">Lego-Store</h1></div>
                 <div>
-                    <span className="text-xl ms-10 font-bold text-blue-50">
-                        <Link to={'/'}>Home</Link>
-                    </span>
+
+                    <p className="text-xl font-bold text-blue-50">
+                        <ActiveLink to={'/'}>Home</ActiveLink>
+                    </p>
                 </div>
                 <div>
-                    <span className="text-xl mx-5 font-bold text-blue-50"><Link to={'/totalToys'}>All-Toys</Link></span>
+                    <p className="text-xl font-bold text-blue-50 mx-5"><ActiveLink to={'/totalToys'}>All-Toys</ActiveLink></p>
                 </div>
                 <div>
-                    <span className="text-xl font-bold text-blue-50"><Link to={'/blog'}>Blog</Link></span> </div>
+                    <span className="text-xl font-bold text-blue-50"><ActiveLink to={'/blog'}>Blog</ActiveLink></span> </div>
             </div>
 
             <div className="flex-none gap-2">
                 {
                     user?.email ?
                         <>
-                            <span className="text-xl mx-3 font-bold text-blue-50">
-                                <Link to={'/addToy'}>Add a Toy</Link>
+                            <span className="text-xl font-bold text-blue-50">
+                                <ActiveLink to={'/addToy'}>Add a Toy</ActiveLink>
                             </span>
-                            <span className="text-xl font-bold text-blue-50"><Link to={'/toys'}>My Toys</Link></span>
+                            <span className="text-xl font-bold text-blue-50 mx-4"><ActiveLink to={'/toys'}>My Toys</ActiveLink></span>
                             <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full mx-2">
+                                <div className="w-12 rounded-full mx-2">
                                     <img src="https://img.freepik.com/free-photo/young-man-wearing-blue-outfit-holding-red-folder_1298-179.jpg?w=740&t=st=1683177286~exp=1683177886~hmac=c440209e285a379ced974449f84436bdcc297217e39170b08f534dfe769c131d" />
                                 </div>
                             </label>
