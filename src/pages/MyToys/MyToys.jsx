@@ -11,13 +11,14 @@ const MyToys = () => {
     const [toys, setToys] = useState([]);
 
 
-    const url = `http://localhost:5000/toys?email=${user?.email}`;
-
     useEffect(() => {
-        fetch(url)
-            .then(res => res.json())
-            .then(data => setToys(data))
-    }, [url])
+        fetch(`http://localhost:5000/myToy/${user?.email}`)
+            .then((res) => res.json())
+            .then((data) => {
+                console.log(data);
+                setToys(data);
+            });
+    }, [user]);
 
 
     const handleDelete = id => {

@@ -36,8 +36,6 @@ const MyToysRow = ({ toy, handleDelete }) => {
                     <Link to={`/updateToy/${_id}`}><button className="btn btn-warning me-2">Update</button></Link>
                     <button onClick={() => handleDelete(_id)} className="btn btn-warning">Delete</button>
                 </td>
-
-
             </tr>
 
 
