@@ -9,8 +9,6 @@ const AllToys = () => {
 
     const totalToys = useLoaderData();
 
-
-
     return (
         <div>
             <Navbar></Navbar>
