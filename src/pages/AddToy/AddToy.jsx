@@ -35,7 +35,7 @@ const AddToy = () => {
 
         }
 
-        fetch('https://assignment-eleven-server-lovat.vercel.app/toys', {
+        fetch('http://localhost:5000/toys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -44,7 +44,6 @@ const AddToy = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 if (data.insertedId) {
                     alert('Toy added successfully');
                     form.reset();
