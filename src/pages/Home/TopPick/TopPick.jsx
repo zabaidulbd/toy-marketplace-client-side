@@ -1,78 +1,82 @@
-import { useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 const TopPick = () => {
-    useEffect(() => {
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
-        AOS.refresh(); // Refresh AOS when the component mounts or updates
-    }, []);
+    const toysData = [
+        {
+            imageUrl:
+                'https://img.freepik.com/free-photo/little-kid-playing_23-2148836333.jpg?w=900&t=st=1689675029~exp=1689675629~hmac=edceb7a43e70acae2651a39a40050b2fb92c58df55fc2314d21276b0194b237d',
+            name: 'Lego-Education',
+            description: 'Explore the world of adventure with our thrilling toy collection for young explorers.',
+            buttons: ['View Details', 'Buy Now'],
+        },
+        {
+            imageUrl:
+                'https://img.freepik.com/free-photo/portrait-childrens-playing_23-2148836246.jpg?w=900&t=st=1689675034~exp=1689675634~hmac=f2151cc33ebd1365b2fdbcf8c01bc2c83e05e6ef59ac19d320b47a92328597c4',
+            name: 'Lego-Duplo',
+            description: 'Ignite creativity and imagination with our colorful building block sets for all ages.',
+            buttons: ['View Details', 'Buy Now'],
+        },
+        {
+            imageUrl:
+                'https://img.freepik.com/free-photo/portrait-childrens-playing_23-2148836251.jpg?w=900&t=st=1689675032~exp=1689675632~hmac=8742d863e6f6193e402a80ff2547664141031c48d0d113b62f2d4046bf06c936',
+            name: 'Lego-Batman',
+            description: 'Discover a galaxy of fun with our space-themed playsets and action figures.',
+            buttons: ['View Details', 'Buy Now'],
+        },
+    ];
 
     return (
-        <div data-aos="fade-up" className="mb-24">
-            <div className="mb-20">
-                <h1 className="text-center font-bold text-5xl text-orange-400">This Week Top Pick</h1>
+        <div className='mt-24 mb-10'>
+            <div className="mb-16 text-center">
+                <h1 className="text-5xl font-bold underline mb-3">Last Seven Days Top Picks</h1>
+                <p className="text-gray-600 text-lg">Discover the most popular toys from the last week.</p>
             </div>
-
-            <div className="carousel w-full rounded-lg">
-                <div id="slide1" className="carousel-item relative w-full">
-                    <img src="https://img.freepik.com/free-photo/little-boy-playing-with-wooden-car_23-2148518124.jpg?w=900&t=st=1684405832~exp=1684406432~hmac=4c776aeea1fc46c7cfc6b0bcc59d9b376ebbbf09a82c581783fa73657bae4449" className="w-full" />
-                    <div className="absolute bottom-72 left-96">
-                        <h2 className='text-5xl text-red-400'>Lego for Kids</h2>
-                        <p className='text-red-400 py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                        <button className="btn btn-outline btn-error mr-3">Discover More</button>
-                        <button className="btn btn-outline btn-error">Latest Products</button>
-                    </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide4" className="btn btn-circle mr-3">❮</a>
-                        <a href="#slide2" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide2" className="carousel-item relative w-full">
-                    <img src="https://img.freepik.com/free-photo/kid-playing-with-different-colorful-shapes_23-2148518053.jpg?w=900&t=st=1684406545~exp=1684407145~hmac=0bccf538b655a84cd74ec4a3a6a4392f73a47966c00450c596372fe401eeecfb" className="w-full" />
-                    <div className="absolute bottom-72 left-96">
-                        <h2 className='text-5xl text-red-400'>Lego Architecture</h2>
-                        <p className='text-red-400 py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                        <button className="btn btn-outline btn-error mr-3">Discover More</button>
-                        <button className="btn btn-outline btn-error">Latest Products</button>
-                    </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide1" className="btn btn-circle mr-3">❮</a>
-                        <a href="#slide3" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide3" className="carousel-item relative w-full">
-                    <img src="https://img.freepik.com/free-photo/top-view-kid-playing-with-colorful-game_23-2148518055.jpg?w=900&t=st=1684406570~exp=1684407170~hmac=ab3b59760d2638f3769112038eb6d2a53efec392c510654536dd4392e2d1c2dc" className="w-full" />
-                    <div className="absolute bottom-72 left-96">
-                        <h2 className='text-5xl text-red-400'>Lego City</h2>
-                        <p className='text-red-400 py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                        <button className="btn btn-outline btn-error mr-3">Discover More</button>
-                        <button className="btn btn-outline btn-error">Latest Products</button>
-                    </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide2" className="btn btn-circle mr-3">❮</a>
-                        <a href="#slide4" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
-                <div id="slide4" className="carousel-item relative w-full">
-                    <img src="https://img.freepik.com/free-photo/children-playing-with-lego-playing-room_1157-26663.jpg?w=996&t=st=1684627433~exp=1684628033~hmac=8fd4885aef1b7b9b27aadd06c0b3bb596defb3b48d51c2a482b1f578d48a6dfb" className="w-full" />
-                    <div className="absolute bottom-72 left-96">
-                        <h2 className='text-5xl text-red-400'>Lego Star Wars</h2>
-                        <p className='text-red-400 py-5'>There are many variations of passages of  available, but the majority have suffered alteration in some form</p>
-                        <button className="btn btn-outline btn-error mr-3">Discover More</button>
-                        <button className="btn btn-outline btn-error">Latest Products</button>
-                    </div>
-                    <div className="absolute flex justify-end transform -translate-y-1/2 left-5 right-5 bottom-0">
-                        <a href="#slide3" className="btn btn-circle mr-3">❮</a>
-                        <a href="#slide1" className="btn btn-circle">❯</a>
-                    </div>
-                </div>
+            <div className="relative">
+                <Carousel
+                    showThumbs={false}
+                    showArrows={false}
+                    infiniteLoop={true}
+                    autoPlay={true}
+                    interval={3000}
+                    showStatus={false}
+                    stopOnHover={false}
+                    transitionTime={1000}
+                    swipeable={false}
+                    renderIndicator={(onClickHandler, isSelected, index, label) => (
+                        <button
+                            type="button"
+                            className={`carousel-indicator ${isSelected ? 'opacity-100' : 'opacity-50'}`}
+                            onClick={onClickHandler}
+                            key={index}
+                            title={label}
+                            style={{ background: isSelected ? '#2563EB' : '#CBD5E0' }}
+                        />
+                    )}
+                >
+                    {toysData.map((toy, index) => (
+                        <div key={index}>
+                            <img src={toy.imageUrl} alt={toy.name} className="w-100 h-100 object-cover" />
+                            <div className="p-4">
+                                <h2 className="text-4xl font-bold mb-2">{toy.name}</h2>
+                                <p className="text-sm text-gray-600 mb-4">{toy.description}</p>
+                                <div className="flex justify-center space-x-4">
+                                    {toy.buttons.map((button, buttonIndex) => (
+                                        <button
+                                            key={buttonIndex}
+                                            className="px-4 py-2 rounded-md text-white bg-blue-500 hover:bg-blue-600"
+                                        >
+                                            {button}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </Carousel>
             </div>
         </div>
-
     );
 };
 
