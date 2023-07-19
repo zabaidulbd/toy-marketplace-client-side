@@ -21,8 +21,8 @@ const Banner = () => {
                     <div className="max-w-md mt-96">
                         <h1 className="mb-5 text-4xl font-bold">Drive at the Cutting Edge of Motorsport</h1>
                         <p className="mb-5">Celebrate 100 years of Le Mans racing new LEGO Technic sets</p>
-                        <button className="btn btn-outline btn-warning me-3">Shop now</button>
-                        <button className="btn btn-outline btn-warning">Learn More</button>
+                        <button className="btn btn-outline btn-accent me-3"><span className='text-white'>Shop now</span></button>
+                        <button className="btn btn-outline btn-accent"> <span className='text-white'>Learn More</span></button>
                     </div>
                 </div>
             </div>

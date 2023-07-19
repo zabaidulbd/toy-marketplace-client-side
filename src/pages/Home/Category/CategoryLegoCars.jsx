@@ -15,14 +15,14 @@ const CategoryLegoCars = ({ car }) => {
                     <figure className="px-10 pt-10">
                         <img src={picture} alt="Image Unavailable" className="rounded-xl" />
                     </figure>
-                    <div className="card-body items-center text-center">
-                        <h2 className="card-title text-orange-400">{name}</h2>
-                        <div className='flex justify-between'>
-                            <p className='me-3 text-orange-400'><strong>Price</strong> : {price}</p>
-                            <p className="text-orange-400"><strong>Rating</strong> : {rating}</p>
+                    <div className="card-body">
+                        <h2 className="card-title ">Name: {name}</h2>
+                        <div>
+                            <p className='me-3'><strong>${price}</strong> <span className='text-blue-500 ps-2'>In Stock!</span> </p>
+                            <p className=''><strong>Rating</strong> : <span className='font-semibold'>{rating}</span></p>
                         </div>
-                        <div className="card-actions">
-                            <button onClick={handleLegoCar} className="btn btn-outline btn-warning">Details</button>
+                        <div className="flex justify-end">
+                            <button onClick={handleLegoCar} className="btn btn-info text-white">Details</button>
                         </div>
                     </div>
                 </div>
@@ -33,14 +33,14 @@ const CategoryLegoCars = ({ car }) => {
                         <figure className="px-10 pt-10">
                             <img src={picture} alt="Image Unavailable" className="rounded-xl" />
                         </figure>
-                        <div className="card-body items-center text-center">
-                            <h2 className="card-title text-orange-400">{name}</h2>
-                            <div className='flex justify-between'>
-                                <p className='me-3 text-orange-400'><strong>Price</strong> : {price}</p>
-                                <p className="text-orange-400"><strong>Rating</strong> : {rating}</p>
+                        <div className="card-body">
+                            <h2 className="card-title ">Name: {name}</h2>
+                            <div>
+                                <p className='me-3'><strong>${price}</strong> <span className='text-blue-500 ps-2'>In Stock!</span> </p>
+                                <p className=''><strong>Rating</strong> : <span className='font-semibold'>{rating}</span></p>
                             </div>
-                            <div className="card-actions">
-                                <button onClick={handleLegoCar} className="btn btn-outline btn-warning">Details</button>
+                            <div className="flex justify-end">
+                                <button onClick={handleLegoCar} className="btn btn-info text-white">Details</button>
                             </div>
                         </div>
                     </div>

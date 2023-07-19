@@ -1,16 +1,16 @@
-// import { useEffect } from 'react';
-// import AOS from 'aos';
-// import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Gallery = () => {
 
-    // useEffect(() => {
-    //     AOS.init({
-    //         duration: 1000,
-    //         once: true,
-    //     });
-    //     AOS.refresh(); // Refresh AOS when the component mounts or updates
-    // }, []);
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+        AOS.refresh(); // Refresh AOS when the component mounts or updates
+    }, []);
     const galleryItems = [
         {
             title: 'LEGO Castle',
@@ -47,13 +47,13 @@ const Gallery = () => {
 
         <div className="mt-20 mb-20">
             <div className="container mx-auto px-4">
-                <h2 className="text-5xl font-bold underline text-gray-800 mb-4 text-center">Welcome to Our Lego Store</h2>
-                <p className="text-gray-600 mb-8 text-center">
+                <h2 data-aos="flip-left" className="text-5xl font-bold underline text-gray-800 mb-4 text-center">Welcome to Our Lego Store</h2>
+                <p data-aos="flip-right" className="text-gray-600 mb-8 text-center">
                     Explore our amazing collection of LEGO sets. Each set is carefully crafted to provide endless fun and creativity
                     for LEGO enthusiasts of all ages. Discover various themes, from medieval castles to futuristic starships, and let
                     your imagination take flight with our LEGO creations.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
+                <div data-aos="flip-right" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 gap-4">
                     {galleryItems.map((item, index) => (
                         <div key={index} className="bg-white shadow-lg">
                             <img src={item.imageUrl} alt={item.title} className="w-full h-80 object-cover" />
@@ -61,7 +61,7 @@ const Gallery = () => {
                                 <h3 className="text-lg font-semibold text-gray-800">{item.title}</h3>
                                 <p className="text-gray-600 mt-2">{item.description}</p>
                             </div>
-                            <div className="bg-gray-100 p-3 rounded-b-lg">
+                            <div data-aos="flip-left" className="bg-gray-100 p-3 rounded-b-lg">
                                 <button className="bg-blue-500 text-white px-4 py-2 w-full rounded hover:bg-blue-600 transition">View Details</button>
                             </div>
                         </div>

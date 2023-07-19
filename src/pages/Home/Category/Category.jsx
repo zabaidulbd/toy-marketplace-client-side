@@ -54,11 +54,14 @@ const Category = () => {
 
 
     return (
-        <div data-aos="fade-up" className='mt-20 mb-16'>
-            <h1 className='text-5xl text-center font-bold mb-10 text-orange-400'>Search By Category</h1>
+        <div className='mt-20 mb-16'>
+            <div className='text-center'>
+                <h1 data-aos="fade-up" className='text-5xl font-bold underline mb-3'>Search By Category</h1>
+                <h3 data-aos="fade-down" className="text-lg text-gray-700 mb-10">Explore our collection of popular toys and Search by your favorite Category</h3>
+            </div>
 
             <Tabs>
-                <TabList className="text-center bg-orange-300 font-bold test-5xl px-5 pt-8">
+                <TabList className="text-center bg-gray-200 font-bold test-5xl px-5 pt-8">
                     <Tab>Lego-City</Tab>
                     <Tab>Lego-Cars</Tab>
                     <Tab>lego-star-wars</Tab>
