@@ -13,7 +13,7 @@ const ToyDetails = () => {
             <Navbar></Navbar>
             <h1 className='text-center font-bold text-5xl mt-10 mb-20'>Details of a Single Toy</h1>
             <div className="card w-96 bg-base-100 shadow-xl my-10 mx-auto">
-                <figure><img src={picture} alt="Toy Image" /></figure>
+                <figure><img src={picture} alt="Toy Image" className='object-cover' /></figure>
                 <div className='card-body'>
                     <div className='flex justify-between'>
                         <h2 className="card-title">Name : {name}</h2>
