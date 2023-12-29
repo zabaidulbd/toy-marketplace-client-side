@@ -42,7 +42,7 @@ const UpdateToy = () => {
 
         }
 
-        fetch(`http://localhost:5000/toys/${_id}`, {
+        fetch(`https://assignment-eleven-server-lovat.vercel.app/toys/${_id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -65,25 +65,25 @@ const UpdateToy = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <h1 className='font-bold text-5xl text-center text-orange-400 mt-20 mb-10'>Update Toy</h1>
+            <h1 className='font-bold text-5xl text-center mt-20 mb-10'>Update Toy</h1>
             <form onSubmit={handleUpdateToy} className="p-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Picture Url Of the Toy</span>
+                            <span className="label-text font-bold">Picture Url Of the Toy</span>
                         </label>
                         <input type="text" placeholder="picture url" name="picture" defaultValue={picture} className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Name</span>
+                            <span className="label-text font-bold">Name</span>
                         </label>
                         <input type="text" name="name" defaultValue={name} placeholder="name" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Seller Name</span>
+                            <span className="label-text font-bold">Seller Name</span>
                         </label>
                         <input type="text" name="sellerName" defaultValue={user?.displayName} className="input input-bordered" />
 
@@ -91,15 +91,15 @@ const UpdateToy = () => {
 
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Seller Email</span>
+                            <span className="label-text font-bold">Seller Email</span>
                         </label>
                         <input type="text" name="email" defaultValue={user?.email} className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Sub-Category</span>
+                            <span className="label-text font-bold">Sub-Category</span>
                         </label>
-                        <select className="input input-bordered text-orange-400 font-bold" name="subCategory" defaultValue={subCategory}>
+                        <select className="input input-bordered font-bold" name="subCategory" defaultValue={subCategory}>
                             <option value="lego-cars">Lego Cars</option>
                             <option value="lego-city">Lego City</option>
                             <option value="lego-star-wars">Lego Star Wars</option>
@@ -107,28 +107,28 @@ const UpdateToy = () => {
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Price</span>
+                            <span className="label-text font-bold">Price</span>
                         </label>
                         <input type="text" name="price" defaultValue={price} placeholder="price" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Ratings</span>
+                            <span className="label-text font-bold">Ratings</span>
                         </label>
                         <input type="text" name="rating" defaultValue={rating} placeholder="rating" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Available Quantity</span>
+                            <span className="label-text font-bold">Available Quantity</span>
                         </label>
                         <input type="text" name="quantity" defaultValue={quantity} placeholder="quantity" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Details Description</span>
+                            <span className="label-text font-bold">Details Description</span>
                         </label>
                         <input type="text" name="detail" defaultValue={detail} placeholder="detail" className="input input-bordered" />
 
@@ -136,7 +136,7 @@ const UpdateToy = () => {
                 </div>
 
                 <div className="form-control mt-6">
-                    <input className="btn btn-warning btn-block" type="submit" value="Update" />
+                    <input className="btn btn-neutral btn-block" type="submit" value="Update" />
                 </div>
             </form>
             <Footer></Footer>

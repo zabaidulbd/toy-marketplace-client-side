@@ -35,7 +35,7 @@ const AddToy = () => {
 
         }
 
-        fetch('http://localhost:5000/toys', {
+        fetch('https://assignment-eleven-server-lovat.vercel.app/toys', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -56,25 +56,25 @@ const AddToy = () => {
     return (
         <>
             <Navbar></Navbar>
-            <h1 className="font-bold text-center text-5xl text-orange-400 mt-20 mb-10">Add Your Toy</h1>
+            <h1 className="font-bold text-center text-5xl mt-20 mb-10">Add Your Toy</h1>
             <form onSubmit={handleAddToy} className="p-5">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text font-bold text-orange-400">Picture Url Of the Toy</span>
+                            <span className="label-text font-bold">Picture Url Of the Toy</span>
                         </label>
                         <input type="text" placeholder="picture url" name="picture" className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Name</span>
+                            <span className="label-text font-bold">Name</span>
                         </label>
                         <input type="text" name="name" placeholder="name" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text font-bold text-orange-400">Seller Name</span>
+                            <span className="label-text font-bold">Seller Name</span>
                         </label>
                         <input type="text" name="sellerName" defaultValue={user?.displayName} className="input input-bordered" />
 
@@ -82,15 +82,15 @@ const AddToy = () => {
 
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text font-bold text-orange-400">Seller Email</span>
+                            <span className="label-text font-bold">Seller Email</span>
                         </label>
                         <input type="text" name="email" defaultValue={user?.email} className="input input-bordered" />
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text font-bold text-orange-400">Sub-Category</span>
+                            <span className="label-text font-bold">Sub-Category</span>
                         </label>
-                        <select className="input input-bordered font-bold text-orange-400" name="subCategory">
+                        <select className="input input-bordered font-bold" name="subCategory">
                             <option value="lego-cars">Lego Cars</option>
                             <option value="lego-city">Lego City</option>
                             <option value="lego-star-wars">Lego Star Wars</option>
@@ -98,28 +98,28 @@ const AddToy = () => {
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text font-bold text-orange-400">Price</span>
+                            <span className="label-text font-bold">Price</span>
                         </label>
                         <input type="text" name="price" placeholder="price" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text text-orange-400 font-bold">Ratings</span>
+                            <span className="label-text font-bold">Ratings</span>
                         </label>
                         <input type="text" name="rating" placeholder="rating" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text font-bold text-orange-400">Available Quantity</span>
+                            <span className="label-text font-bold">Available Quantity</span>
                         </label>
                         <input type="text" name="quantity" placeholder="quantity" className="input input-bordered" />
 
                     </div>
                     <div className="form-control">
                         <label className="label">
-                            <span className="label-text font-bold text-orange-400">Details Description</span>
+                            <span className="label-text font-bold">Details Description</span>
                         </label>
                         <input type="text" name="detail" placeholder="detail" className="input input-bordered" />
 
@@ -127,7 +127,7 @@ const AddToy = () => {
                 </div>
 
                 <div className="form-control mt-6">
-                    <input className="btn btn-warning btn-block" type="submit" value="Add Toy" />
+                    <input className="btn btn-neutral btn-block" type="submit" value="Add Toy" />
                 </div>
             </form>
             <Footer></Footer>

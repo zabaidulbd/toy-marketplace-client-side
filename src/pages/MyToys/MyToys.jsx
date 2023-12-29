@@ -12,7 +12,7 @@ const MyToys = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myToy/${user?.email}`)
+        fetch(`https://assignment-eleven-server-lovat.vercel.app/myToy/${user?.email}`)
             .then((res) => res.json())
             .then((data) => {
                 console.log(data);
@@ -24,7 +24,7 @@ const MyToys = () => {
     const handleDelete = id => {
         const proceed = confirm('Are You Sure You Want To Delete This Toy');
         if (proceed) {
-            fetch(`http://localhost:5000/toys/${id}`, {
+            fetch(`https://assignment-eleven-server-lovat.vercel.app/toys/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -43,17 +43,17 @@ const MyToys = () => {
     return (
         <div>
             <Navbar></Navbar>
-            <h1 className="text-center font-bold text-5xl mt-20 mb-10 text-orange-400">List of My Total Toys</h1>
+            <h1 className="text-center font-bold text-5xl mt-20 mb-10">List of My Total Toys</h1>
             <div className="form-control mb-10 ms-96">
                 <div className="input-group">
                     <input type="text" placeholder="Sort by Name" className="input input-bordered" />
                     <button className="btn btn-square">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-orange-200" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
                     </button>
                 </div>
             </div>
             <div className="overflow-x-auto w-full mb-10">
-                <table className="table w-full text-orange-400 p-5">
+                <table className="table w-full p-5">
                     {/* head */}
                     <thead>
                         <tr>
@@ -75,11 +75,8 @@ const MyToys = () => {
                         }
 
                     </tbody>
-
-
                 </table>
             </div>
-
             <Footer></Footer>
         </div>
     );

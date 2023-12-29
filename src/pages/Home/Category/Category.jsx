@@ -15,7 +15,7 @@ const Category = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/toy/lego-city`)
+        fetch(`https://assignment-eleven-server-lovat.vercel.app/toy/lego-city`)
             .then(res => res.json())
             .then(data => {
                 setLegoCity(data)
@@ -25,7 +25,7 @@ const Category = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/toy/lego-cars`)
+        fetch(`https://assignment-eleven-server-lovat.vercel.app/toy/lego-cars`)
             .then(res => res.json())
             .then(data => {
                 setLegoCars(data)
@@ -35,7 +35,7 @@ const Category = () => {
 
     useEffect(() => {
 
-        fetch(`http://localhost:5000/toy/lego-star-wars`)
+        fetch(`https://assignment-eleven-server-lovat.vercel.app/toy/lego-star-wars`)
             .then(res => res.json())
             .then(data => {
                 setLegoCarWar(data)
